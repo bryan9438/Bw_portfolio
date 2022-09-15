@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #999D9E;
+}
+
+.background-banner {
+  width: 100vw;
+  height: fit-content;
+  background-color: #B2FF44;
+  position:fixed;
+  z-index: 0;
+  top: 33vh
+}
+
+.bg-text > h1 {
+  font-family: lato;
+  font-size: 9vw;
+  font-weight: 400;
+  line-height: 176px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: my-animation 9s linear infinite;
+  -webkit-animation: my-animation 9s linear infinite;
+  animation: my-animation 9s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

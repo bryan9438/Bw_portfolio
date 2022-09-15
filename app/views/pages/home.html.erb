@@ -1,21 +1,31 @@
 <div class="ultra-container">
   <div class="iphone-container d-flex align-items-center justify-content-center">
-    <div class="bubble1">
+    <div class="bubble2">
+      <div class="top-bubble2 d-flex align-items-center">
+        <%= image_tag "imessage.png", class:"imessage" %>
+        <p>MESSAGE</p>
+      </div>
       <p>
-      Click HERE to download my resume!<br>
-      3:34pm (GMT)
+      I’m passionate about front-end development!<br>
+      <span class="message-time">3:33pm (GMT)</span>
       </p>
     </div>
     <%= image_tag "root_ig.png", class:"iphone-root" %>
-    <div class="bubble2">
+    <div class="bubble1">
+      <div class="top-bubble1 d-flex align-items-center">
+        <%= image_tag "ig.png", class:"ig" %>
+        <p>INSTAGRAM</p>
+      </div>
       <p>
-      I’m passionate about front-end development!<br>
-      3:33pm (GMT)
+      Click <a href="https://res.cloudinary.com/dhpoz7jts/image/upload/v1663252398/CV/Tsz_Lok_Wong_Bryan__CV_na6x9h.jpg" target="_blank", class="bw_cv">HERE</a> to download my resume!<br>
+      <span class="message-time">3:34pm (GMT)</span>
       </p>
     </div>
   </div>
-  <div class="background-banner d-flex justify-content-center align-items-center">
-    <%= image_tag "hand.png", class:"hand" %>
-    <h1 class="text-center">Hello, I am Bryan</h1>
+  <div class="background-banner d-flex justify-content-center align-items-center scroll-container">
+    <div id="scroll-text" class="d-flex justify-content-center align-items-center bg-text">
+      <%= image_tag "hand.png", class:"hand" %>
+      <h1 class="text-center">Hello, I am Bryan</h1>
+    </div>
   </div>
 </div>

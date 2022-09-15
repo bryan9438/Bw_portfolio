@@ -1,12 +1,25 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.nav-link {
+  font-family: 'Sora', sans-serif;
+  color: black;
+  margin-right: 89px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.nav-link:hover {
+  color: lightgray;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-expand-lg {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0;
 }
