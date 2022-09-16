@@ -1,4 +1,9 @@
-.nav-link {
+.navbar-bw {
+  justify-content: space-between;
+  background: transparent;
+}
+
+.nav-item {
   font-family: 'Sora', sans-serif;
   color: black;
   margin-right: 89px;
@@ -8,11 +13,7 @@
   color: lightgray;
 }
 
-.navbar-expand-lg {
-  overflow: hidden;
-}
-
-.navbar a {
+.nav-link a {
   float: left;
   display: block;
   text-align: center;
@@ -21,5 +22,5 @@
 }
 
 .container-fluid {
-  padding: 0;
+  width: auto;
 }

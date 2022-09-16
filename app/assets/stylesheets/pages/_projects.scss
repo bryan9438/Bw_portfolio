@@ -14,25 +14,24 @@
   width: 50%;
 }
 
-
-.ema > h5 {
-  font-weight: 700;
-}
-
 .landscape-iphone-container {
   position: relative;
   min-width: 35vw;
   margin: 0 auto;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .carousel {
   position: relative;
-  top: 3vh;
-  width: 20%;
-  right: 47%;
-  margin-top:min(2vh);
+  top: 7vh;
+  width: 25%;
+  right: 50%;
   z-index: 1;
+  // margin-top:min(2vh);
+}
+
+.carousel-indicators {
+  bottom: -12px;
 }
 
 .vertical-iphone{
@@ -47,13 +46,23 @@
     display: block;
     min-width: 50vw;
     z-index: 1;
+
+    width: 802px;
+    margin-top: 30px;
   }
   .carousel {
-    position: relative;
-    bottom: 7vh;
-    width: 50vw;
+    position: absolute;
+    bottom: 44vh;
+    width: 70vw;
     right: 50%;
-    margin-top: 2vh;
+    margin-top: 13vh;
     z-index: 1;
+    right: 15vw;
+  }
+  .navbar-bw {
+    left: 38%;
+  }
+  .landscape-iphone-container {
+    margin-left: auto;
   }
 }

@@ -94,3 +94,76 @@
 #scroll-text > .hand {
   width: 9vw;
 }
+
+.imessage-bubble, .ig-bubble, .top-imessage-bubble2, .top-ig-bubble1 {
+  display: none;
+}
+
+
+@media (max-width: 576px) {
+  .background-banner {
+    top: 117vh;
+  }
+  .imessage-bubble, .ig-bubble, .top-imessage-bubble2, .top-ig-bubble1 {
+    display: block;
+  }
+  .bubble1, .bubble2 {
+    display: none;
+  }
+  .iphone-root {
+    width: 90%;
+  }
+  .iphone-container {
+    margin-right: auto;
+  }
+  .imessage-bubble {
+    z-index: 1;
+    width: 97%;
+    height: fit-content;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    margin-top: 5%;
+    transition: all 0.5s ease;
+  }
+  .imessage-bubble > p {
+      margin-bottom: 0;
+      padding: 10px;
+      font-size: unset;
+  }
+  .top-imessage-bubble2{
+    border-radius: 15px 15px 0 0;
+    background-color: #B4B4B4;
+  }
+  .top-imessage-bubble2> p {
+    margin: 0;
+    padding-left: 10px ;
+  }
+  .ig-bubble {
+    z-index: 1;
+    width: 97%;
+    height: fit-content;
+    margin-top: 1%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 2%;
+    transition: all 0.5s ease;
+  }
+  .ig-bubble > p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: unset;
+  }
+  .top-ig-bubble1 {
+    border-radius: 15px 15px 0 0;
+    background-color: #B4B4B4;
+  }
+  .top-ig-bubble1 >p {
+    margin: 0;
+    padding-left: 10px ;
+  }
+  .iphone-container {
+    flex-direction: column;
+  }
+}
