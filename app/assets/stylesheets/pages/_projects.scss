@@ -34,6 +34,20 @@
   bottom: -12px;
 }
 
+.album-pics:hover {
+  transition:0.4s;
+  cursor: pointer;
+  scale: (1.1);
+  filter: brightness(120%);
+}
+
+.album-pics:hover:after {
+  transition: 400ms;
+  cursor: pointer;
+  scale: (1.1);
+  filter: brightness(120%);
+}
+
 .vertical-iphone{
   display: none;
 }
@@ -46,8 +60,7 @@
     display: block;
     min-width: 50vw;
     z-index: 1;
-
-    width: 802px;
+    width: 90vw;
     margin-top: 30px;
   }
   .carousel {

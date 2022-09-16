@@ -10,13 +10,17 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <%= image_tag "ema-logo.png", class:"d-block w-100" %>
+          <%= link_to "https://ema-project.herokuapp.com/users/sign_in", target:"_blank", class: "ema-link" do %>
+            <%= image_tag "ema-logo.png", class:"d-block w-100 album-pics" %>
+          <% end %>
         </div>
         <div class="carousel-item">
-          <%= image_tag "grabme2.png", class:"d-block w-100" %>
+          <%= link_to "https://grab-me-gabrielcampos243.herokuapp.com/", target:"_blank", class: "grabme-link" do %>
+            <%= image_tag "grabme2.png", class:"d-block w-100 album-pics" %>
+          <% end %>
         </div>
         <div class="carousel-item">
-          <%= image_tag "popcorn-gif.png", class:"d-block w-100" %>
+          <%= image_tag "popcorn-gif.png", class:"d-block w-100 album-pics" %>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
