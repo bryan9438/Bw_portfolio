@@ -14,17 +14,46 @@
   width: 50%;
 }
 
-.carousel {
-  position: relative;
-  bottom: 330px;
-  z-index: 1;
-  width: 24%;
-}
-
-.landscape-iphone {
-  gap: 45px;
-}
 
 .ema > h5 {
   font-weight: 700;
+}
+
+.landscape-iphone-container {
+  position: relative;
+  min-width: 35vw;
+  margin: 0 auto;
+  margin-left: 10%;
+}
+
+.carousel {
+  position: relative;
+  top: 3vh;
+  width: 20%;
+  right: 47%;
+  margin-top:min(2vh);
+  z-index: 1;
+}
+
+.vertical-iphone{
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .landscape-iphone {
+    display: none;
+  }
+  .vertical-iphone{
+    display: block;
+    min-width: 50vw;
+    z-index: 1;
+  }
+  .carousel {
+    position: relative;
+    bottom: 7vh;
+    width: 50vw;
+    right: 50%;
+    margin-top: 2vh;
+    z-index: 1;
+  }
 }
