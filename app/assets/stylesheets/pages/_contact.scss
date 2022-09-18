@@ -90,7 +90,7 @@
   .big-container {
     bottom: 46vh;
   }
-  
+
   .ipad-contact {
    display: none;
   }
@@ -102,13 +102,21 @@
   .icon-box {
     position: relative;
     z-index: 1;
-    top: 63vh;
+    top: 65vh;
     left: -4vw;
     gap: 2vw;
   }
   .icon-box p {
     font-size: small;
   }
+
+  .contact-info {
+    position: relative;
+    z-index: 1;
+    top: 67vh;
+    left: 12vw;
+  }
+
   .contact-info p {
     font-size: x-small;
   }
