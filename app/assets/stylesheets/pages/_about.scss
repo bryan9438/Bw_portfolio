@@ -58,6 +58,9 @@
 }
 
 @media (max-width: 576px) {
+  html {
+    overflow: hidden ;
+  }
   .abt-img {
     display: none;
   }
@@ -75,7 +78,7 @@
     width: 86vw;
     position: absolute;
     bottom: 126%;
-    right: 31%;
+    right: 27%;
   }
 
   .text-container > p {
@@ -86,7 +89,7 @@
     width: 275px;
     height: 245px;
     position: absolute;
-    top: 58%;
+    top: 73%;
     left: 17%;
   }
   .abt-header {
