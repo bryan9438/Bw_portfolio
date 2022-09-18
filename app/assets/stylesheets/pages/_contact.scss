@@ -1,0 +1,131 @@
+.big-container {
+  position: relative;
+  bottom: 40vh;
+}
+
+.ipad-contact {
+  height: 90vh;
+  width: 60 vw;
+  position: relative;
+}
+
+.icon-box {
+  position: relative;
+  z-index: 1;
+  top: 62vh;
+  left: 8vw;
+  gap: 3vw;
+}
+
+
+.b-fb, .b-linkedin, .b-github, .b-mail {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1771FF;
+  display: absolute;
+}
+
+.b-fb {
+  right: 0;
+}
+
+.b-linkedin {
+  right: 80px;
+}
+
+.b-github {
+  right: 160px;
+}
+.b-mail {
+  right: 240px;
+}
+
+.contact-info {
+  position: relative;
+  z-index: 1;
+  top: 64vh;
+  left: 12vw;
+}
+
+.contact-info p {
+  font-size: small;
+}
+
+.contact-info > .email-ac {
+  margin-bottom: 2%;
+}
+
+.contact-info > .bday {
+  margin-bottom: 3%;
+}
+
+.contact-info > .mobile-no {
+  margin-bottom: 11%;
+}
+
+.fa-brands, .fa-envelope {
+  color: white;
+}
+
+.fa-brands:hover, .fa-envelope:hover {
+  color: #c9c9c9;
+  transform: scale(1.4);
+  transition: 0.9s;
+}
+
+.icon-3-box {
+  margin-left: 2%;
+}
+
+.icon-4-box {
+  margin-left: 5%;
+}
+
+.vertical-contact {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .big-container {
+    bottom: 46vh;
+  }
+  
+  .ipad-contact {
+   display: none;
+  }
+  .vertical-contact {
+    display: block;
+    width: 90vw;
+    margin-top: 27%;
+  }
+  .icon-box {
+    position: relative;
+    z-index: 1;
+    top: 63vh;
+    left: -4vw;
+    gap: 2vw;
+  }
+  .icon-box p {
+    font-size: small;
+  }
+  .contact-info p {
+    font-size: x-small;
+  }
+  .contact-info > .mobile-no {
+    margin-bottom: 17%;
+    margin-left: -3%;
+  }
+  .contact-info > .email-ac {
+    margin-bottom: 5%;
+  margin-left: -2%;
+  }
+  .contact-info > .bday {
+    margin-bottom: 5%;
+    margin-left: -3%;
+  }
+  .contact-info > .hm-address {
+    margin-bottom: 38%;
+    margin-left: -3%;
+  }
+}

@@ -1,4 +1,97 @@
-.about-img {
+.abt-img {
   height: 90vh;
-  margin-right: 10%;
+  width: 65vw;
+  position: relative;
+}
+
+.text-container {
+  width: 60vw;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.text-container > .bot-text {
+  margin-bottom: 0;
+}
+
+.paragraph-container {
+  position: relative;
+  bottom: 90vh;
+  min-width: 470px;
+  min-height: 470px;
+}
+
+.abt-header {
+  margin-bottom: 4px;
+}
+
+.fun-me {
+  width: 275px;
+  height: 245px;
+  position: absolute;
+  top: 58%;
+  left: 78%;
+  animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.straight-ipad {
+  display: none;
+}
+
+.straight-ipad  {
+  width: 100vw;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .abt-img {
+    display: none;
+  }
+  .straight-ipad {
+    display: block;
+    margin-top: 2%;
+  }
+  .paragraph-container {
+    position: relative;
+    right: -10vw;
+    bottom: -9vh;
+  }
+
+  .text-container {
+    width: 86vw;
+    position: absolute;
+    bottom: 126%;
+    right: 31%;
+  }
+
+  .text-container > p {
+    font-size: small;
+    width: 81vw;
+  }
+  .fun-me {
+    width: 275px;
+    height: 245px;
+    position: absolute;
+    top: 58%;
+    left: 17%;
+  }
+  .abt-header {
+    position: absolute;
+    bottom: 208%;
+    right: 37%;
+  }
 }

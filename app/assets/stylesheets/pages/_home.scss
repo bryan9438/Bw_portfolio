@@ -101,6 +101,9 @@
 
 
 @media (max-width: 576px) {
+  html {
+    overflow: visible;
+  }
   .background-banner {
     top: 117vh;
   }

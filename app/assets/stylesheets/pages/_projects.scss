@@ -35,16 +35,9 @@
 }
 
 .album-pics:hover {
-  transition:0.4s;
+  transform: scale(1.1);
+  transition: 1s;
   cursor: pointer;
-  scale: (1.1);
-  filter: brightness(120%);
-}
-
-.album-pics:hover:after {
-  transition: 400ms;
-  cursor: pointer;
-  scale: (1.1);
   filter: brightness(120%);
 }
 
