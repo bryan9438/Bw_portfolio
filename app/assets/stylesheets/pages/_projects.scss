@@ -51,24 +51,49 @@
   }
   .vertical-iphone{
     display: block;
-    min-width: 50vw;
+    min-width: 354px;
+    max-width: 370px;
     z-index: 1;
     width: 90vw;
     margin-top: 30px;
   }
+  .album-pics {
+    margin-left: 15%;
+    width: 73% !important;
+  }
+
   .carousel {
     position: absolute;
-    bottom: 44vh;
+    bottom: 72vh;
     width: 70vw;
     right: 50%;
     margin-top: 13vh;
     z-index: 1;
-    right: 15vw;
+    right: 16vw;
   }
+
+  .carousel-indicators {
+    bottom: -22px;
+    margin-right: 9%;
+  }
+
   .navbar-bw {
     left: 38%;
   }
   .landscape-iphone-container {
     margin-left: auto;
+  }
+  .carousel-inner {
+    left: 1vw;
+    margin-top: 10vh;
+  }
+  .carousel-control-next {
+    left: 54vw;
+  }
+  .carousel-control-prev {
+    left: 8vw;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    top: 9vh;
   }
 }
