@@ -1,139 +1,105 @@
-.big-container {
+.contact-container {
   position: relative;
-  bottom: 40vh;
+  text-align: center;
+  margin-top: 1%;
+  margin-right: 4%;
+}
+.contact-container > .ipad-contact {
+  width: 45vw;
+}
+.top-btn {
+  position: absolute;
+  top: 27%;
+  gap: 30%;
+  left: 46%;
 }
 
-.ipad-contact {
-  height: 90vh;
-  width: 60 vw;
-  position: relative;
+.fa-brands:hover, .fa-solid:hover {
+  color: #1155bc;
+  text-decoration: none;
+  transform: scale(1.2);
+  transition: 0.4s;
 }
 
-.icon-box {
-  position: relative;
-  z-index: 1;
-  top: 62vh;
-  left: 8vw;
-  gap: 3vw;
+.top-btn > p {
+  font-size: 12px;
 }
 
-
-.b-fb, .b-linkedin, .b-github, .b-mail {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #1771FF;
-  display: absolute;
+ul > li {
+  list-style-type: none;
 }
 
-.b-fb {
-  right: 0;
+.info-container {
+  position: absolute;
+  top: 61%;
+  left: 58%;
+  padding: 10px;
+  width: 380px;
+  max-width: fit-content;
+  max-height: 560px;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
 }
 
-.b-linkedin {
-  right: 80px;
+.info-container > ul {
+  padding: 0;
 }
 
-.b-github {
-  right: 160px;
-}
-.b-mail {
-  right: 240px;
+.info-container p {
+  font-size: 1vw;
 }
 
-.contact-info {
-  position: relative;
-  z-index: 1;
-  top: 64vh;
-  left: 12vw;
+.fa-brands, .fa-solid  {
+  color: #1873FF;
 }
 
-.contact-info p {
-  font-size: small;
-}
-
-.contact-info > .email-ac {
-  margin-bottom: 2%;
-}
-
-.contact-info > .bday {
-  margin-bottom: 3%;
-}
-
-.contact-info > .mobile-no {
-  margin-bottom: 11%;
-}
-
-.fa-brands, .fa-envelope {
-  color: white;
-}
-
-.fa-brands:hover, .fa-envelope:hover {
-  color: #c9c9c9;
-  transform: scale(1.4);
-  transition: 0.9s;
-}
-
-.icon-3-box {
-  margin-left: 2%;
-}
-
-.icon-4-box {
-  margin-left: 5%;
-}
-
-.vertical-contact {
+.contact-container > .vertical-ipad {
   display: none;
 }
-
 @media (max-width: 768px) {
-  .big-container {
-    bottom: 46vh;
+  .contact-container > .ipad-contact {
+      display: none;
   }
-
-  .ipad-contact {
-   display: none;
+  .contact-container > .vertical-ipad {
+      display: block;
+      width: 96vw;
+      min-width: 307px;
   }
-  .vertical-contact {
-    display: block;
-    width: 90vw;
-    margin-top: 27%;
+  .contact-container {
+      display: flex;
+      justify-content: center;
+      margin-right: 0;
   }
-  .icon-box {
-    position: relative;
-    z-index: 1;
-    top: 70vh;
-    left: -4vw;
-    gap: 2vw;
+  .top-btn {
+      margin-left: 33%;
+      top: 35%;
+      gap: 13%;
+      right: 34%;
+      left: -23px;
+      width: 33vw;
   }
-  .icon-box p {
-    font-size: small;
+  .top-btn > a {
+      font-size: 1px;
   }
-
-  .contact-info {
-    position: relative;
-    z-index: 1;
-    top: 69vh;
-    left: 12vw;
+  .info-container {
+      width: 47vw;
+      left: 50%;
+      top: 65%;
+      min-width: 259px;
+      min-height: 144px
   }
-
-  .contact-info p {
-    font-size: x-small;
+  .info-container p {
+      font-size: 16px;
+      margin-bottom: 0;
   }
-  .contact-info > .mobile-no {
-    margin-bottom: 17%;
-    margin-left: -3%;
+  .fa-brands, .fa-solid  {
+      font-size: 35em !important;
   }
-  .contact-info > .email-ac {
-    margin-bottom: 5%;
-  margin-left: -2%;
-  }
-  .contact-info > .bday {
-    margin-bottom: 5%;
-    margin-left: -3%;
-  }
-  .contact-info > .hm-address {
-    margin-bottom: 38%;
-    margin-left: -3%;
+}
+@media (min-width: 769px) {
+  .contact-container > .ipad-contact {
+      width: 54vw;
+      min-width: 478px;
   }
 }
