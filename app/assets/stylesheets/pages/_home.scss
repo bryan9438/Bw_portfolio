@@ -16,11 +16,10 @@
   transition:0.3s
 }
 
-
 .bubble1 > p {
   margin-bottom: 0;
   padding: 10px;
-  font-size: 1vw;
+  font-size: 1em;
 }
 
 .top-bubble1 {
@@ -69,7 +68,7 @@
 .bubble2 > p {
   margin-bottom: 0;
   padding: 10px;
-  font-size: 1vw;
+  font-size: 1em;
 }
 
 .top-bubble2 {
@@ -91,6 +90,11 @@
   color: #B4B4B4;
 }
 
+.iphone-root {
+  min-width: 240px;
+  width: 35%;
+}
+
 #scroll-text > .hand {
   width: 9vw;
 }
@@ -98,7 +102,6 @@
 .imessage-bubble, .ig-bubble, .top-imessage-bubble2, .top-ig-bubble1 {
   display: none;
 }
-
 
 @media (max-width: 576px) {
   html {
@@ -115,6 +118,7 @@
   }
   .iphone-root {
     width: 90%;
+    min-width: 240px;
   }
   .iphone-container {
     margin-right: auto;
@@ -132,7 +136,7 @@
   .imessage-bubble > p {
       margin-bottom: 0;
       padding: 10px;
-      font-size: unset;
+      font-size: 3vw;
   }
   .top-imessage-bubble2{
     border-radius: 15px 15px 0 0;
@@ -156,7 +160,7 @@
   .ig-bubble > p {
     margin-bottom: 0;
     padding: 10px;
-    font-size: unset;
+    font-size: 3vw;
   }
   .top-ig-bubble1 {
     border-radius: 15px 15px 0 0;
@@ -169,4 +173,10 @@
   .iphone-container {
     flex-direction: column;
   }
+}
+
+@media (max-width: 1252px) {
+    p {
+      font-size: 12px;
+    }
 }

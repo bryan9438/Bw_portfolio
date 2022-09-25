@@ -501,6 +501,11 @@ jest-worker@^27.4.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
+jquery@^3.1.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.1.tgz#fab0408f8b45fc19f956205773b62b292c147a16"
+  integrity sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw==
+
 json-parse-even-better-errors@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
@@ -731,6 +736,13 @@ terser@^5.14.1:
     acorn "^8.5.0"
     commander "^2.20.0"
     source-map-support "~0.5.20"
+
+tilt.js@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/tilt.js/-/tilt.js-1.2.1.tgz#7d140ecb06744192815735e538b02739fe24d92f"
+  integrity sha512-IGRh3FJbq6BRH2ETb2KxDWont2k740oR+0QMs39QVkjnr7QmA6L1VzSKsOLgFXg5QNtHyRKp7vzFoJCYxgzsJA==
+  dependencies:
+    jquery "^3.1.1"
 
 update-browserslist-db@^1.0.5:
   version "1.0.9"
