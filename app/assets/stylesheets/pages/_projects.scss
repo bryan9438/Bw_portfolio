@@ -3,6 +3,30 @@
   z-index: 1;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f3bf37;
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+.carousel-inner:hover .overlay {
+  opacity: 0.7;
+}
+
+.text-hover {
+  margin-top: 42%;
+  font-size: 1vw;
+}
+
 .ultra-container {
   flex-wrap: wrap;
   max-width: 1000px;
@@ -95,5 +119,12 @@
   }
   .carousel-control-prev, .carousel-control-next {
     top: 9vh;
+  }
+  .overlay {
+    left: 15%;
+    width: 50vw;
+  }
+  .text-hover {
+    font-size: 3vw;
   }
 }
