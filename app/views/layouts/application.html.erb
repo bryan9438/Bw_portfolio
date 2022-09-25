@@ -12,14 +12,15 @@
 
   <body>
     <%= render "shared/navbar" %>
+    <%= render "shared/banner" %>
 
-    <div class="background-banner d-flex justify-content-center align-items-center scroll-container">
-      <div id="scroll-text" class="d-flex justify-content-center align-items-center bg-text">
-        <%= image_tag "hand.png", class:"hand" %>
-        <h1 class="text-center">Hello, I am Bryan</h1>
-      </div>
+    <div class="copy-right">
+      <p>
+        ©2022 Bryan Wong <br>
+        All Rights Reserved
+      </p>
     </div>
-    
+
     <%= yield %>
   </body>
 </html>
