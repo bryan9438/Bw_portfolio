@@ -32,7 +32,7 @@ ul > li {
 .info-container {
   position: absolute;
   top: 61%;
-  left: 58%;
+  left: 57%;
   padding: 10px;
   width: 380px;
   max-width: fit-content;
@@ -44,10 +44,11 @@ ul > li {
 
 .info-container > ul {
   padding: 0;
+  margin-bottom: 0;
 }
 
 .info-container p {
-  font-size: 1vw;
+  font-size: 1em;
 }
 
 .fa-brands, .fa-solid  {
@@ -100,6 +101,6 @@ ul > li {
 @media (min-width: 769px) {
   .contact-container > .ipad-contact {
       width: 54vw;
-      min-width: 478px;
+      min-width: 520px;
   }
 }
