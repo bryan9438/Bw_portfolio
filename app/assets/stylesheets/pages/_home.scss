@@ -1,185 +1,230 @@
-.bubble1 {
-  z-index: 1;
-  width: fit-content;
-  height: fit-content;
-  background-color: #EEEEEE;
-  border-radius: 15px;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
-  margin-top: 30%;
-  margin-left: 2%;
-  transition: all 0.5s ease;
+.hm-ig{
+  width: 250px;
+  height: 500px;
 }
 
-.bubble1:hover {
-  transform: scale(1.1);
-  filter: brightness(110%);
-  transition:0.3s
+.text-box > h1 {
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 
-.bubble1 > p {
-  margin-bottom: 0;
-  padding: 10px;
-  font-size: 1em;
-}
-
-.top-bubble1 {
-  border-radius: 15px 15px 0 0;
-  background-color: #B4B4B4;
-}
-
-.top-bubble1 > p {
-  margin: 0;
-  padding-left: 10px ;
-}
-
-.ig {
-  width: 25px;
-  padding-left: 10px ;
-}
-
-.bw_cv {
-  color: #9144FF;
-  text-decoration: none;
+.text-box > h2{
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
-.bw_cv:hover {
-  color: #fe8ffd;
+.cv-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: #B2FF44;
+  padding: 10px 75px;
+  border-radius: 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cv-btn > a {
+  text-decoration: none;
+  color: black;
 }
 
-.bubble2 {
-  z-index: 1;
-  width: fit-content;
-  height: fit-content;
-  background-color: #EEEEEE;
-  border-radius: 15px;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
-  margin-bottom: 32%;
-  margin-right: 2%;
-  transition: all 0.5s ease;
-}
-
-.bubble2:hover {
-  transform: scale(1.1);
-  filter: brightness(110%);
-  transition:0.3s
-}
-
-.bubble2 > p {
-  margin-bottom: 0;
-  padding: 10px;
-  font-size: 1em;
-}
-
-.top-bubble2 {
-  border-radius: 15px 15px 0 0;
-  background-color: #B4B4B4;
-}
-
-.top-bubble2 > p {
-  margin: 0;
-  padding-left: 10px ;
-}
-
-.imessage {
-  width: 30px;
-  padding-left: 10px ;
-}
-
-.message-time {
-  color: #B4B4B4;
-}
-
-.iphone-root {
-  min-width: 240px;
-  width: 32%;
-}
-
-#scroll-text > .hand {
-  width: 9vw;
-}
-
-.imessage-bubble, .ig-bubble, .top-imessage-bubble2, .top-ig-bubble1 {
-  display: none;
-}
-
-@media (max-width: 576px) {
-  html {
-    overflow: visible;
-  }
-  .background-banner {
-    top: 117vh;
-  }
-  .imessage-bubble, .ig-bubble, .top-imessage-bubble2, .top-ig-bubble1 {
-    display: block;
-  }
-  .bubble1, .bubble2 {
-    display: none;
-  }
-  .iphone-root {
-    width: 90%;
-    min-width: 240px;
-  }
-  .iphone-container {
-    margin-right: auto;
-  }
-  .imessage-bubble {
-    z-index: 1;
-    width: 97%;
-    height: fit-content;
-    background-color: #EEEEEE;
-    border-radius: 15px;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
-    margin-top: 5%;
-    transition: all 0.5s ease;
-  }
-  .imessage-bubble > p {
-      margin-bottom: 0;
-      padding: 10px;
-      font-size: 3vw;
-  }
-  .top-imessage-bubble2{
-    border-radius: 15px 15px 0 0;
-    background-color: #B4B4B4;
-  }
-  .top-imessage-bubble2> p {
-    margin: 0;
-    padding-left: 10px ;
-  }
-  .ig-bubble {
-    z-index: 1;
-    width: 97%;
-    height: fit-content;
-    margin-top: 1%;
-    background-color: #EEEEEE;
-    border-radius: 15px;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
-    margin-bottom: 2%;
-    transition: all 0.5s ease;
-  }
-  .ig-bubble > p {
-    margin-bottom: 0;
-    padding: 10px;
-    font-size: 3vw;
-  }
-  .top-ig-bubble1 {
-    border-radius: 15px 15px 0 0;
-    background-color: #B4B4B4;
-  }
-  .top-ig-bubble1 >p {
-    margin: 0;
-    padding-left: 10px ;
-  }
-  .iphone-container {
+.text-btn {
+    display: flex;
     flex-direction: column;
-  }
-  .copy-right {
-    display: none;
-  }
+    align-items: center;
 }
 
-@media (max-width: 1252px) {
-    p {
-      font-size: 12px;
-    }
+.cv-btn:hover {
+  transition: 0.5s;
+  scale: 1.1;
 }
+
+.fa-download:before {
+  color: black;
+}
+
+// .bubble1 {
+//   z-index: 1;
+//   width: fit-content;
+//   height: fit-content;
+//   background-color: #EEEEEE;
+//   border-radius: 15px;
+//   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+//   margin-top: 30%;
+//   margin-left: 2%;
+//   transition: all 0.5s ease;
+// }
+
+// .bubble1:hover {
+//   transform: scale(1.1);
+//   filter: brightness(110%);
+//   transition:0.3s
+// }
+
+// .bubble1 > p {
+//   margin-bottom: 0;
+//   padding: 10px;
+//   font-size: 1em;
+// }
+
+// .top-bubble1 {
+//   border-radius: 15px 15px 0 0;
+//   background-color: #B4B4B4;
+// }
+
+// .top-bubble1 > p {
+//   margin: 0;
+//   padding-left: 10px ;
+// }
+
+// .ig {
+//   width: 25px;
+//   padding-left: 10px ;
+// }
+
+// .bw_cv {
+//   color: #9144FF;
+//   text-decoration: none;
+//   font-weight: 600;
+// }
+
+// .bw_cv:hover {
+//   color: #fe8ffd;
+// }
+
+// .bubble2 {
+//   z-index: 1;
+//   width: fit-content;
+//   height: fit-content;
+//   background-color: #EEEEEE;
+//   border-radius: 15px;
+//   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+//   margin-bottom: 32%;
+//   margin-right: 2%;
+//   transition: all 0.5s ease;
+// }
+
+// .bubble2:hover {
+//   transform: scale(1.1);
+//   filter: brightness(110%);
+//   transition:0.3s
+// }
+
+// .bubble2 > p {
+//   margin-bottom: 0;
+//   padding: 10px;
+//   font-size: 1em;
+// }
+
+// .top-bubble2 {
+//   border-radius: 15px 15px 0 0;
+//   background-color: #B4B4B4;
+// }
+
+// .top-bubble2 > p {
+//   margin: 0;
+//   padding-left: 10px ;
+// }
+
+// .imessage {
+//   width: 30px;
+//   padding-left: 10px ;
+// }
+
+// .message-time {
+//   color: #B4B4B4;
+// }
+
+// .iphone-root {
+//   min-width: 240px;
+//   width: 32%;
+// }
+
+// #scroll-text > .hand {
+//   width: 9vw;
+// }
+
+// .imessage-bubble, .ig-bubble, .top-imessage-bubble2, .top-ig-bubble1 {
+//   display: none;
+// }
+
+// @media (max-width: 576px) {
+//   html {
+//     overflow: visible;
+//   }
+//   .background-banner {
+//     top: 117vh;
+//   }
+//   .imessage-bubble, .ig-bubble, .top-imessage-bubble2, .top-ig-bubble1 {
+//     display: block;
+//   }
+//   .bubble1, .bubble2 {
+//     display: none;
+//   }
+//   .iphone-root {
+//     width: 90%;
+//     min-width: 240px;
+//   }
+//   .iphone-container {
+//     margin-right: auto;
+//   }
+//   .imessage-bubble {
+//     z-index: 1;
+//     width: 97%;
+//     height: fit-content;
+//     background-color: #EEEEEE;
+//     border-radius: 15px;
+//     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+//     margin-top: 5%;
+//     transition: all 0.5s ease;
+//   }
+//   .imessage-bubble > p {
+//       margin-bottom: 0;
+//       padding: 10px;
+//       font-size: 3vw;
+//   }
+//   .top-imessage-bubble2{
+//     border-radius: 15px 15px 0 0;
+//     background-color: #B4B4B4;
+//   }
+//   .top-imessage-bubble2> p {
+//     margin: 0;
+//     padding-left: 10px ;
+//   }
+//   .ig-bubble {
+//     z-index: 1;
+//     width: 97%;
+//     height: fit-content;
+//     margin-top: 1%;
+//     background-color: #EEEEEE;
+//     border-radius: 15px;
+//     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+//     margin-bottom: 2%;
+//     transition: all 0.5s ease;
+//   }
+//   .ig-bubble > p {
+//     margin-bottom: 0;
+//     padding: 10px;
+//     font-size: 3vw;
+//   }
+//   .top-ig-bubble1 {
+//     border-radius: 15px 15px 0 0;
+//     background-color: #B4B4B4;
+//   }
+//   .top-ig-bubble1 >p {
+//     margin: 0;
+//     padding-left: 10px ;
+//   }
+//   .iphone-container {
+//     flex-direction: column;
+//   }
+//   .copy-right {
+//     display: none;
+//   }
+// }
+
+// @media (max-width: 1252px) {
+//     p {
+//       font-size: 12px;
+//     }
+// }
