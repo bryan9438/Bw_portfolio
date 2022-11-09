@@ -43,6 +43,11 @@
   color: black;
 }
 
+@media (max-width: 768px) {
+  .fa-download {
+      font-size: 1em  !important;
+  }
+}
 // .bubble1 {
 //   z-index: 1;
 //   width: fit-content;
