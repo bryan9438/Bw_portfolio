@@ -23,9 +23,25 @@
     <%= yield %>
   </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-    alert("js is working");
-    });
-  </script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script>
+      $(document).ready(
+             function() {
+                 $(".hm-left-side").hide();
+                 $(".hm-left-side").show("slide", { direction: "left" }, 1000);
+
+                 $(".hm-right-side").hide();
+                 $(".hm-right-side").show("slide", { direction: "right" }, 1000);
+
+                 $(".ipad-abt, .centered").hide();
+                 $(".ipad-abt, .centered").fadeIn(1500);
+         });
+
+
+
+
+    </script>
 </html>
