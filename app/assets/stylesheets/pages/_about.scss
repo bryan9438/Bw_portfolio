@@ -102,6 +102,7 @@ p {
     min-width: 15vw !important;
   }
 }
+
 @media (max-width: 768px) {
   .ipad-abt {
     display: none;
@@ -123,6 +124,7 @@ p {
   }
   .centered {
     width: 83%;
+    min-width: 295px;
     top: 40%;
     left: 50%;
   }
