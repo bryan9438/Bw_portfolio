@@ -4,6 +4,7 @@
   margin-top: 1%;
   margin-right: 4%;
 }
+
 .contact-container > .ipad-contact {
   width: 45vw;
 }
@@ -58,6 +59,7 @@ ul > li {
 .contact-container > .vertical-ipad {
   display: none;
 }
+
 @media (max-width: 768px) {
   .contact-container > .ipad-contact {
       display: none;
