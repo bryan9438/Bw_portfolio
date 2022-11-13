@@ -61,7 +61,7 @@ p {
   .vertical-abt{
     display: block;
     width: 100vw;
-    min-width: 334px;
+    min-width: 390px;
   }
 
   .container-abt {
@@ -79,14 +79,14 @@ p {
 
 @media (max-width: 1252px) {
   .ipad-abt{
-    width: 70vw;
+    width: 61%;
     min-width: 579px;
   }
-  .centered {
-    max-height: 500px;
-    width: 61%;
-    left: 39%;
-  }
+  // .centered {
+  //   max-height: 500px;
+  //   width: 61%;
+  //   left: 39%;
+  // }
   h1 {
     font-size: 20px;
     font-weight: 700;
@@ -135,7 +135,7 @@ p {
   }
   .centered {
     width: 83%;
-    min-width: 278px;
+    min-width: 345px;
     max-height: 378px;
     margin-top: 4px;
     // top: 40%;
