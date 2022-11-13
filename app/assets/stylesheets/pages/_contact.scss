@@ -38,10 +38,47 @@ ul > li {
   width: 380px;
   max-width: fit-content;
   max-height: 560px;
-  border-radius: 15px;
+  border-radius: 7px;
   transform: translate(-50%, -50%);
   background-color: #f7f7f7;
 }
+
+.box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255)
+    ),
+    conic-gradient(from var(--border-angle), transparent 60%, rgb(255, 0, 247), rgb(92, 16, 223));
+    background-size: calc(100% - (var(--border-size) * 2))
+    calc(100% - (var(--border-size) * 2)),
+    cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+
 
 .info-container > ul {
   padding: 0;
@@ -64,6 +101,7 @@ ul > li {
   .contact-container > .ipad-contact {
       display: none;
   }
+  
   .contact-container > .vertical-ipad {
       display: block;
       width: 96vw;

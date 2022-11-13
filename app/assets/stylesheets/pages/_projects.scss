@@ -69,9 +69,18 @@
   display: none;
 }
 
-@media (max-width: 576px) {
-  .landscape-iphone {
+@media (max-width: 768px) {
+  .landscape-iphone{
+    display: block;
+  }
+  .vertical-iphone {
     display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .landscape-iphone {
+    display: none !important;
   }
   .vertical-iphone{
     display: block;

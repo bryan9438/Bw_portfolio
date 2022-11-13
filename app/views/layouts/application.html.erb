@@ -31,22 +31,26 @@
     <script>
       $(document).ready(
              function() {
-                 $(".hm-left-side").hide();
-                 $(".hm-left-side").show("slide", { direction: "left" }, 1000);
+                $(".hm-left-side").hide();
+                $(".hm-left-side").show("slide", { direction: "left" }, 1000);
 
-                 $(".hm-right-side").hide();
-                 $(".hm-right-side").show("slide", { direction: "right" }, 1000);
+                $(".hm-right-side").hide();
+                $(".hm-right-side").show("slide", { direction: "right" }, 1000);
 
-                 $(".ipad-abt, .centered").hide();
-                 $(".ipad-abt, .centered").fadeIn(1500);
+                $(".landscape-iphone, #carouselExampleCaptions").hide();
+                $("#carouselExampleCaptions, .landscape-iphone").fadeIn(1500);
 
-                 $(".contact-container").hide();
-                 $(".contact-container").show("slide", { direction: "left" }, 1000);
+                $(".ipad-abt, .centered").hide();
+                $(".ipad-abt, .centered").fadeIn(1500);
 
-              const typed = new Typed("#typed", {
-              strings:["Hello! My name is Bryan currently based in Reading, UK. I graduated from Torrens University, Sydney, Australia with a BA degree in Hospitality and Event Management. After a few years of working in the hospitality industry, I realised my passion is more towards web design and technology and therefore I’ve decided to join the Le Wagon Bootcamp to pursue further studies ! Although the coding Bootcamp only lasted for 10 weeks, during this amazing and intensive journey I have learned a lot including the fundamentals of HTML, CSS, javascript, bootstrap, SQLite, Figma, ruby on rails, and last but not least using Heroku to deploy our projects. Never the less, I have also pursue further studies in jQuery and React with Coursera to prepare myself into the industry."],
-              typeSpeed: 50,
-              loop: false
+                $(".contact-container").hide();
+                $(".contact-container").show("slide", { direction: "left" }, 1000);
+
+                const typed = new Typed("#typed", {
+                strings:["Hello! My name is Bryan currently based in Reading, UK. I graduated from Torrens University, Sydney, Australia with a BA degree in Hospitality and Event Management. After a few years of working in the hospitality industry, I realised my passion is more towards web design and technology and therefore I’ve decided to join the Le Wagon Bootcamp to pursue further studies ! Although the coding Bootcamp only lasted for 10 weeks, during this amazing and intensive journey I have learned a lot including the fundamentals of HTML, CSS, javascript, bootstrap, SQLite, Figma, ruby on rails, and last but not least using Heroku to deploy our projects. Never the less, I have also pursue further studies in jQuery and React with Coursera to prepare myself into the industry."],
+                typeSpeed: 50,
+                loop: false,
+                showCursor: false
               });
          });
     </script>

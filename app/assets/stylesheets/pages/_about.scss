@@ -61,10 +61,12 @@ p {
   .vertical-abt{
     display: block;
     width: 100vw;
+    min-width: 334px;
   }
 
   .container-abt {
     margin-left: 0;
+    min-width: 334px;
   }
   .container-abt{
     flex-direction: column;
@@ -103,6 +105,15 @@ p {
   }
 }
 
+@media (max-width: 390px) {
+  .centered {
+    top: 40%;
+  }
+  .me-juggle-box > img {
+    width: 45vw !important;
+  }
+}
+
 @media (max-width: 768px) {
   .ipad-abt {
     display: none;
@@ -124,8 +135,10 @@ p {
   }
   .centered {
     width: 83%;
-    min-width: 295px;
-    top: 40%;
+    min-width: 278px;
+    max-height: 378px;
+    margin-top: 4px;
+    // top: 40%;
     left: 50%;
   }
 
@@ -147,7 +160,7 @@ p {
     align-self: center;
   }
   .me-juggle-box > img {
-    width: 46vw !important;
+    // width: 46vw !important;
     margin-top: 8%;
   }
   .copy-right {

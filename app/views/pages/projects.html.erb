@@ -1,42 +1,48 @@
 <div class="ultra-container">
-  <div class="d-flex align-items-center justify-content-center landscape-iphone-container">
-    <%= image_tag "landscape-phone.png", class:"landscape-iphone" %>
-    <%= image_tag "project-vertical-iphone.png", class:"vertical-iphone" %>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3500">
-          <%= link_to "https://ema-project.herokuapp.com/", target:"_blank", class: "ema-link d-block img-fluid" do %>
-            <%= image_tag "ema-logo.png", class:"d-block w-100 album-pics" %>
-            <div class="overlay d-flex align-items-center flex-column">
-              <div class="text-hover">
-                User Id: bryan@mail.com<br>
-                Password: 123123
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center justify-content-center landscape-iphone-container">
+          <%= image_tag "landscape-phone.png", class:"landscape-iphone" %>
+          <%= image_tag "project-vertical-iphone.png", class:"vertical-iphone" %>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2500">
+                <%= link_to "https://ema-project.herokuapp.com/", target:"_blank", class: "ema-link d-block img-fluid" do %>
+                  <%= image_tag "ema-logo.png", class:"d-block w-100 album-pics" %>
+                  <div class="overlay d-flex align-items-center flex-column">
+                    <div class="text-hover">
+                      User Id: bryan@mail.com<br>
+                      Password: 123123
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <%= link_to "https://grab-me-gabrielcampos243.herokuapp.com/", target:"_blank", class: "grabme-link d-block img-fluid" do %>
+                  <%= image_tag "grabme2.png", class:"d-block w-100 album-pics" %>
+                <% end %>
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <%= image_tag "popcorn-gif.png", class:"d-block w-100 album-pics d-block img-fluid" %>
+                <div class="overlay d-flex align-items-center flex-column">
+                    <div class="text-hover">
+                      Comming Soon ...
+                    </div>
+                  </div>
               </div>
             </div>
-          <% end %>
-        </div>
-        <div class="carousel-item" data-bs-interval="3500">
-          <%= link_to "https://grab-me-gabrielcampos243.herokuapp.com/", target:"_blank", class: "grabme-link d-block img-fluid" do %>
-            <%= image_tag "grabme2.png", class:"d-block w-100 album-pics" %>
-          <% end %>
-        </div>
-        <div class="carousel-item" data-bs-interval="3500">
-          <%= image_tag "popcorn-gif.png", class:"d-block w-100 album-pics d-block img-fluid" %>
-          <div class="overlay d-flex align-items-center flex-column">
-              <div class="text-hover">
-                Comming Soon ...
-              </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
 </div>
